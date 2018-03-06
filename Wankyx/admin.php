@@ -89,12 +89,18 @@ if(!$_SESSION['adminStatus'])
 			<div class="menu">
 				<nav>
 						<ul>
-							<li><a href="index.php" title="Allez vers l'accueil">Accueil</a></li>
+							<?php
+							if($_SESSION['adminStatus'])
+								echo '<li><a href="admin.php" title="Allez vers l\'accueil">Accueil</a></li>';
+							else 
+								echo '<li><a href="index.php" title="Allez vers l\'accueil">Accueil</a></li>'; 
+							?>
+							 
 							<li><a href="biographie.php" title="Lire ma biographie">Biographie</a></li>
 							<li><a href="articles.php" title="Lire mes Articles">Articles</a></li>
 							<li><a href="#" title="Allez vers le Forum">Forum</a></li>
 							<li><a href="contact.php" title="Me contacter">Contacter</a></li>
-							<li><a href="#login-form" title="Se déconnecter" >Se déconnecter</a>
+							<li><a href="index.php" title="Se déconnecter" >Se déconnecter</a>
 						</ul>
 					</nav>
 			</div>

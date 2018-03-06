@@ -126,13 +126,15 @@ if(!session_start())
 			$i = 0;
 			while($data = $pdoQuery->fetch())
 			{
+				$data['title'] = preg_replace('/\s+/', '-', $data['title']);
+
 				echo '<article>';
 				echo '<h2>'. $data['title'] .'</h2>';
 				echo '<p><span>' . $data['date'] .'</span></p>';
 				echo '<figure> <img src="'.$data['picture'].'" alt="Image_vitire">
 						<figcaption>'. $data['description'] .'</figcaption>';
 				echo '<br>';
-				echo '<a class="read" href="articles.php?id='. $data['id'].'">LIRE</a>';
+				echo '<a class="read" href="articles/'. $data['title']. '/'. $data['title'] .'.php' .'">LIRE</a>';
 				echo '</article>';
  				echo '<hr>';
 				$i++;
@@ -155,7 +157,8 @@ if(!session_start())
 
 						while($data = $pdoQuery->fetch())
 						{
-							echo '<li> <a href="articles.php?id='. $data['id'] .'">'. $data['title'] .'</a></li>';
+							$data['title'] = preg_replace('/\s+/', '-', $data['title']);
+							echo '<li> <a href="articles/'. $data['title']. '/'. $data['title'] .'.php' .'">'. $data['title'] .'</a></li>';
 						}
 						$pdoQuery->closeCursor();
 						?>
@@ -163,10 +166,6 @@ if(!session_start())
 					<div>
 		</aside>
 		</section>
-
-
-
-
 
     <footer>
 			<div class="social_network">

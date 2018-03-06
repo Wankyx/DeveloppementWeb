@@ -63,7 +63,7 @@ if(!session_start())
 							<li><a href="#" title="Allez vers le Forum">Forum</a></li>
 							<li><a href="contact.php" title="Me contacter">Contacter</a></li>
 							<?php if($_SESSION['adminStatus'])
-											echo '<li><a href="#login-form" title="Se déconnecter" >Se déconnecter</a>';
+											echo '<li><a href="index.php" title="Se déconnecter" >Se déconnecter</a>';
 										else
 											echo '<li><a href="#login-form" title="Se connecter" onclick="on()">Se connecter</a>';
 							?>
