@@ -1,0 +1,44 @@
+@font-face {
+font-family: "Lucida Console A";
+src: url("bbcode-fonts/L_10646.TTF");
+ }
+@font-face
+{
+  font-family: "Lucida Console B";
+  src: url("bbcode-fonts/LUCON.TTF");
+}
+
+.bbcode-left
+{
+  text-align: left;
+}
+.bbcode-right
+{
+  text-align: right;
+}
+.bbcode-center
+{
+  text-align: center;
+}
+.bbcode-justify
+{
+  text-align: justify;
+}
+.bbcode-iframe
+{
+  border: none;
+}
+.bbcode-blockquote
+{
+  padding: 5px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px #111;
+  background-color: #FFF;
+}
+.bbcode-code
+{
+  background-color: rgb(20, 20, 20);
+  color: #006400;
+  font-family: "Lucida Console B";
+  padding: 5px;
+}

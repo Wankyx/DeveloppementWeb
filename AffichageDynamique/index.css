@@ -1,0 +1,309 @@
+*
+{
+	margin: 0;
+	padding: 0;
+
+}
+body 
+{
+	background-color: #EDEDED;
+}
+a
+{
+	text-decoration: none;
+	color: black;
+}
+.wrapper 
+{
+	margin: auto;
+	width: 900px;
+}
+#animation_pictures
+{
+	margin-top: 70px;
+	clear: both;
+}
+.slide_picture
+{
+	float: left;
+}
+img[class="slide_picture"]
+{
+	width: 1400px;
+	height: 500px;
+}
+.slides 
+{
+	width: calc(1400px*3);
+	animation: glisses 10s infinite;
+}
+.slider 
+{
+	width: 1400px;
+	overflow: hidden;
+	margin: 150px auto;
+}
+@keyframes glisses 
+{
+	0% 
+	{
+		transform: translateX(0);
+	}	
+	10% 
+	{
+		transform: translateX(0);
+	}
+	33% 
+	{
+		transform: translateX(-1400px);
+	}
+	43% 
+	{
+		transform: translateX(-1400px);
+	}
+	66% 
+	{
+		transform: translateX(-2800px);
+	}
+	76% 
+	{
+		transform: translateX(-2800px);
+	}
+	100% 
+	{
+		transform: translateX(0);
+	}
+
+}
+/*****************************************************/
+header 
+{
+	background-color: #000;
+	height: 170px;
+}
+header h1 
+{
+	font-family: Ubuntu;
+	color: #d35400;
+ 	font-size: 38px;
+	position: relative;
+	top: 30px;
+}
+header nav 
+{
+	margin-top: 70px;
+	float: right;
+}
+header ul li
+{
+	font-size: 20px;
+ 
+	display: inline-block;
+ 
+}
+a[class="menu"]
+{
+	font-family: helvetica;
+
+	color: #FFF;
+	margin: 0 17px;
+}
+a[class="menu"]:hover
+{
+	transition: 2s;	
+ 	border-bottom: solid;
+ 	border-color: #7f8c8d;
+}
+/*********************************************/
+#PresentationProjet
+{
+	clear: both;
+}
+#PresentationProjet ol li
+{
+	list-style: none;
+	display: inline-block;
+}
+
+#PresentationProjet h2 
+{
+	text-shadow: 2px 2px 2px black;
+	color: #f1c40f;
+	font-size: 24px;
+	text-align: center;
+}
+#PresentationProjet p 
+{
+	color: #000;
+	text-shadow: 2px 2px 2px black;
+	font-size: 18px;
+	margin-top: 10px;
+	text-align: center;
+}
+.present1
+{
+	background-image: url("pictures/colbert.jpg"); 
+	border: solid;
+	width: 350px;
+	height: 223px;
+}
+.present1 div
+{
+	height: 223px;
+	width: calc(350px/2);
+	background-color: rgba(255, 255, 255, 0.9);
+}
+#p2 
+{
+	position: relative;
+	bottom: 20px;
+	margin-left: 150px;
+}
+.present2
+{
+
+	background-image: url("pictures/participant.png"); 
+	background-size: cover;
+
+	border: solid;
+	width: 350px;
+	height: 223px;
+}
+.present2 div
+{
+ 	
+	height: 223px;
+	width: calc(350px/2);
+	background-color: rgba(255, 255, 255, 0.9);
+}
+/******************************************************/
+footer
+{
+	clear: both;
+	margin-top: 100px;
+	background-color: #141414;
+	text-align: center;
+	padding: 50px;
+}
+footer img
+{
+	width: 64px;
+	height: 64px;
+}
+footer ol li
+{
+	list-style: none;
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.social_network h4
+{
+
+ 	font-size: 18px;
+	color: #8e44ad;
+}
+/***************************************/
+/*				formulaire			   */
+/***************************************/
+#modal 
+{
+	position: absolute;
+	left: 30%;
+	top: -500px;
+	z-index: 10;
+	transition: 2s;
+
+	text-align: center;
+	width: 500px;
+	height: 280px;
+	border: solid;
+	border-color: rgb(192, 57, 43);
+	border-radius: 10px;
+	background-color: rgb(44, 62, 80);
+	
+}
+#modal h3 
+{
+	color:rgb(236, 240, 241);
+	font-size: 58px;
+	padding-top: 20px; 
+}
+#modal div 
+{
+	margin-top: 10px;
+}
+#modal label 
+{
+	color: rgb(236, 240, 241);
+ 	margin-top: 5px;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+#modal input[type="text"]
+{
+	padding: 7px;
+ 	color: black;
+ 	font-family: Ubuntu;
+	border-radius: 7px;
+	font-size: 15px;
+	border-color: rgb(230, 126, 34);
+}
+#modal input[type="submit"]
+{
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 18px;
+	border: none;
+	font-family: Ubuntu;
+}
+#modal img 
+{
+	position: relative;
+	float: right;
+	bottom: 250px;
+
+}
+/************************************************/
+#sendmsg div
+{
+	margin-left: 40%;
+	margin-top: 70px;
+}
+#sendmsg input 
+{
+	background-color: rgb(236, 240, 241);
+	padding: 10px;
+}
+#sendmsg textarea 
+{
+	padding: 10px;
+	margin-top: 10px;
+	background-color: rgb(236, 240, 241);
+}
+#sendmsg ol li  
+{
+	list-style: none;
+}
+/************************************************/
+#message 
+{
+	margin-top: 70px;
+}
+#message h2 
+{
+	text-align: center;
+	color: rgb(44, 62, 80);
+}
+#message div
+{
+	padding: 10px;
+	margin: 0 auto;
+	border: solid;
+	border-color: red;
+	width: 700px;
+	height: 200px;
+
+	overflow-x: scroll;
+	overflow-y: scroll;
+}
